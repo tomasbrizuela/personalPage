@@ -7,6 +7,12 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 export const NavBar = () => {
     const [status, setStatus] = useState(false)
 
+    const [menu, setMenu] = useState(false)
+
+    let openMenu = () => {
+        setMenu(!menu)
+    }
+
     let changeTheme = () => {
         console.log("Hola")
         setStatus(!status)
@@ -26,7 +32,15 @@ export const NavBar = () => {
                         <li className='item'><a href="#" className={status ? 'aDark' : 'aLigth'}>Portfolio</a></li>
                         <li className='item'><a href="#" className={status ? 'aDark' : 'aLigth'}>Blog</a></li>
                         <li className='item'>< button className="theme" onClick={changeTheme}> <FontAwesomeIcon icon={faToggleOn} /> </button></li>
-                        <li className='menu'><FontAwesomeIcon icon={faBars} /></li>
+                        <li className='menu'><FontAwesomeIcon icon={faBars} onClick={openMenu} /></li>
+                        <li className={menu ? 'subMenu' : 'subMenuShow'}>
+                            <div id='subMenuOptions'>
+                                <div className='itemSubMenu'>CV</div>
+                                <div className='itemSubMenu'>Linkedin</div>
+                                <div className='itemSubMenu'>Portfolio</div>
+                                <div className='itemSubMenu'>Blog</div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>

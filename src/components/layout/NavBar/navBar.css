@@ -115,6 +115,40 @@ a:hover{
     cursor: pointer;
 }
 
+
+
+.menu:hover{
+    transform: scale(0.9);
+}
+.menu:active{
+    transform: scale(1.1);
+}
+
+.subMenu{
+    display: none;
+}
+
+.subMenuShow{
+    display: block;
+}
+
+#subMenuOptions{
+    position: absolute;
+    background-color: white;
+    row-gap: 20px;
+    top: 80px;
+    right: 1px;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px white;
+}
+
+.itemSubMenu{
+    margin: 5px;
+    border-bottom: 1px solid rgb(244, 244, 244);
+    font-size: 20px;
+}
+
 @media (max-width: 768px){
     .menu{
         display: block;
@@ -124,9 +158,8 @@ a:hover{
     }
 }
 
-.menu:hover{
-    transform: scale(0.9);
-}
-.menu:active{
-    transform: scale(1.1);
+@media (min-width: 761px){
+    #subMenuOptions{
+        display: none;
+    }
 }

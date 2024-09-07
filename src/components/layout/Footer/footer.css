@@ -3,3 +3,13 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.footer{
+    color: rgb(113, 113, 113);
+    background-color: rgb(243, 243, 243);
+    padding: 5px;
+}
+
+.footerText{
+    font-weight: 300;
+}
