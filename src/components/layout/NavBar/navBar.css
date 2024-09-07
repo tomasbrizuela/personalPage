@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navBarStyles{
+    border-radius: 10px 10px 0px 00px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(206, 165, 244);
+    width: 100%;
+    height: 80px;
+}
+
+.navBarStylesDark{
+    border-radius: 10px 10px 0px 00px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: bisque;
+    color: black;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 300px;
+    color: black;
+
+}
+
+.navDark{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 300px;
+}
+
+img{
+    padding: 10px;
+    margin: 20px;
+    width: 60px;
+}
+
+.logoDark{
+    color: black;
+}
+
+.logoLigth{
+    color: white;
+}
+
+ul{
+    margin: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.aLigth{
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.aDark{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+.theme{
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+    font-family: poppins;
+    border: 0.1px solid grey;
+    /* box-shadow: 1px 1px 10px grey; */
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.theme:hover{
+    transform: scale(1.1);
+}
+
+.theme:active{
+    transform: scale(0.9);
+}
+
+.item{
+    display: block;
+}
+
+.menu{
+    display: none;
+    font-size: 30px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+    .menu{
+        display: block;
+    }
+    .item{
+        display: none;
+    }
+}
+
+.menu:hover{
+    transform: scale(0.9);
+}
+.menu:active{
+    transform: scale(1.1);
+}
